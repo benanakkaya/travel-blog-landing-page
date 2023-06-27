@@ -13,7 +13,7 @@ const PostCard = ({ post,type }) => {
         <Category category={post.category} />
         </span>
       </div>
-      <div className={`flex flex-col gap-[15px] ${type === 2 ? "absolute bottom-[42px] px-[40px]" : null}`}>
+      <div className={`flex flex-col gap-[15px] ${type === 2 ? "absolute bottom-[42px] px-[20px] md:px-[40px]" : null}`}>
       <small className={`text-[12px] ${type === 2 ? "text-[#E5E5E5]" : "text-[#6C757D]"}`}>{post.date}</small>
       <h4 className={`text-[18px] font-bold leading-[25px] ${type === 2 ? "text-white" : "text-[#495057]"}`}>{post.title}</h4>
       <p className={`${type === 2 ? "text-[#E5E5E5]" : "text-[#6C757D]"} text-[12px] leading-[20px]`}>

@@ -5,7 +5,7 @@ import PopularTopics from './components/PopularTopics/PopularTopics'
 
 export default function Home() {
   return (
-    <main className='flex flex-col gap-[75px]'>
+    <main className='flex flex-col gap-[40px] md:gap-[75px]'>
     <Hero />
     <PopularTopics />
     <Banner />

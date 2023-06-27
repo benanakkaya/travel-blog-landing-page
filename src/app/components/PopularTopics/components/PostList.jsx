@@ -71,7 +71,7 @@ const PostList = () => {
     ]
 
   return (
-    <div className='grid grid-cols-4 gap-[20px]'>
+    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[20px]'>
       {posts.map(post => (
         <PostCard type={1} post={post} />
       ))}

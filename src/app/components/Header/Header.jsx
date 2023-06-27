@@ -8,6 +8,7 @@ import {
   BsInstagram,
   BsSearch
 } from "react-icons/bs";
+import {CiMenuFries} from "react-icons/ci"
 
 const Header = () => {
   const navItems = [
@@ -54,11 +55,11 @@ const Header = () => {
 
   return (
     <div className="bg-black bg-opacity-20 absolute top-0 left-0 w-full text-white">
-      <div className="container px-[70px] py-[29px] flex items-center justify-between">
+      <div className="container px-[15px] sm:px-[25px] md:px-[40px] lg:px-[55px] xl:px-[70px] py-[15px] lg:py-[30px] flex items-center justify-between">
         <Link className="text-white text-[20px] font-bold" href="/">
           RUNO
         </Link>
-        <div className="flex items-center gap-[17px]">
+        <div className="hidden lg:flex items-center gap-[17px]">
           <nav className="flex items-center">
             <ul className="flex items-center gap-[25px]">
               {navItems.map((item) => (
@@ -88,6 +89,7 @@ const Header = () => {
             <BsSearch />
           </button>
         </div>
+        <CiMenuFries className="text-2xl block lg:hidden" />
       </div>
     </div>
   );

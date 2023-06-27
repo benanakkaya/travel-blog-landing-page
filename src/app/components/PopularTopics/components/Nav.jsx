@@ -31,15 +31,15 @@ const Nav = () => {
     ]
 
   return (
-    <div className='flex items-center w-full justify-between'>
-      <ul className='flex items-center gap-[20px]'>
+    <div className='flex w-full md:justify-between'>
+      <ul className='flex flex-1 flex-wrap items-center gap-x-[20px]'>
         {navItems.map(item => (
         <li key={item.id} className={`text-[12px] font-bold leading-[25px] ${item.name === "All" ? "text-[#D4A373]" : "text-black"}`}>
             {item.name}
         </li>
         ))}
       </ul>
-      <Link href="/" className="text-[12px] font-bold leading-[25px]" >See All</Link>
+      <Link href="/" className="text-[12px] font-bold leading-[25px] px-[6px] py-[3px] underline" >See All</Link>
     </div>
   )
 }
