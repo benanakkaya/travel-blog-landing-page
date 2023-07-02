@@ -74,7 +74,7 @@ const FooterTop = () => {
     <div className="bg-[#212529]">
       <div className="container px-[15px] sm:px-[25px] md:px-[40px] lg:px-[55px] xl:px-[70px] py-[53px] lg:py-[106px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[60px] lg:gap-[120px] ">
         
-        <div className="flex flex-col items-center md:items-start text-center gap-[16px]">
+        <div className="flex flex-col items-center md:items-start text-center md:text-start  gap-[16px]">
             <h5 className="text-white text-[18px] font-bold leading-[25px]">{contactList.title}</h5>
             <ul className="flex flex-col gap-[18px]">
                 {contactList.items.map(item => (
@@ -82,7 +82,7 @@ const FooterTop = () => {
                 ))}
             </ul>
         </div>
-        <div className="flex flex-col  items-center md:items-start text-center  gap-[16px]">
+        <div className="flex flex-col  items-center md:items-start text-center md:text-start  gap-[16px]">
             <h5 className="text-white text-[18px] font-bold leading-[25px] ">{explorateList.title}</h5>
             <ul className="flex flex-col gap-[18px]">
                 {explorateList.items.map(item => (
@@ -90,14 +90,14 @@ const FooterTop = () => {
                 ))}
             </ul>
         </div>
-        <div className="flex flex-col  items-center md:items-start text-center  gap-[16px]">
+        <div className="flex flex-col  items-center md:items-start text-center md:text-start   gap-[16px]">
             <h5 className="text-white text-[18px] font-bold leading-[25px] ">{headquarterList.title}</h5>
                 {headquarterList.items.map(item => (
                 <p className="text-[#E5E5E5] text-[12px]" key={item.id}>{item.name}</p>
                 ))}
 
         </div>
-        <div className="flex flex-col  items-center md:items-start text-center  gap-[16px]">
+        <div className="flex flex-col  items-center md:items-start text-center md:text-start  gap-[16px]">
             <h5 className="text-white text-[18px] font-bold leading-[25px]">{connectionList.title}</h5>
             <ul className="flex gap-[18px]">
                 {connectionList.items.map(item => (
